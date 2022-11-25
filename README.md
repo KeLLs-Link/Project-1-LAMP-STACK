@@ -40,11 +40,28 @@ ___
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ```
+___
 ### All three Php packages viz: php-mysql, libapache2-mod-php, php core packages automatically installed as dependencies
 ![Screenshot (216)](https://user-images.githubusercontent.com/57721371/204061851-a56b1992-59cf-4a17-bbf8-0affd7245976.png)
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
+___
+### Myfirstlampproject directory created and ownership assigned 
+![Screenshot (218)](https://user-images.githubusercontent.com/57721371/204062216-cb9c9aee-bea2-4cfe-a3ec-cbca98e0ed74.png)
+```
+sudo mkdir /var/www/projectlamp
+sudo chown -R $USER:$USER /var/www/projectlamp
+```
+___
+### A new configuration file was created using vim (Vi-Improved)- an open source screen based text editor
+![Screenshot (220)](https://user-images.githubusercontent.com/57721371/204062568-b40cb731-2d57-46e7-a380-095ffa84f80e.png)
+```
+sudo vi /etc/apache2/sites-available/projectlamp.conf
+```
+___
+### Enabling php on the web browser
+
 
 
 
