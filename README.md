@@ -28,6 +28,30 @@ ___
 ```
 sudo apt install mysql-server
 ```
+___
+### Succesfully logged into MySQL Database
+![Screenshot (214)](https://user-images.githubusercontent.com/57721371/204059490-3598686e-a14a-4b2c-a2ba-37f3f0490769.png)
+```
+sudo mysql
+```
+___
+### Root user password set using root user MySQL_native_password; PassWord.1
+![Screenshot (215)](https://user-images.githubusercontent.com/57721371/204060023-8788305e-0e0f-4899-85b0-c5bc1fe08835.png)
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
