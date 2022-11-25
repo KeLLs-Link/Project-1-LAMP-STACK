@@ -60,9 +60,33 @@ ___
 sudo vi /etc/apache2/sites-available/projectlamp.conf
 ```
 ___
-### Enabling php on the web browser
+### Enabling php content on the website 
+![Screenshot (223)](https://user-images.githubusercontent.com/57721371/204062758-90043c63-44c1-4204-af2d-15d1fb2a4229.png)
+```
+sudo vim /etc/apache2/mods-enabled/dir.conf
 
+<IfModule mod_dir.c>
 
+#Change this:
+
+#DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+
+#To this:
+
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+
+</IfModule>
+```
+___
+### creating an index.php file inside a custom web root folder
+![Screenshot (230)](https://user-images.githubusercontent.com/57721371/204062967-41265322-233b-4659-9603-b6f87eab8013.png)
+
+```
+vim /var/www/projectlamp/index.php
+<?php
+
+phpinfo();
+```
 
 
 
