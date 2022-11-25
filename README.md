@@ -40,6 +40,11 @@ ___
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ```
+### All three Php packages viz: php-mysql, libapache2-mod-php, php core packages automatically installed as dependencies
+![Screenshot (216)](https://user-images.githubusercontent.com/57721371/204061851-a56b1992-59cf-4a17-bbf8-0affd7245976.png)
+```
+sudo apt install php libapache2-mod-php php-mysql
+```
 
 
 
